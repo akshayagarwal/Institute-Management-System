@@ -1,0 +1,1 @@
+Thankyou for installing IMS by Lead India Technologies. If you have any doubts or complaints kidnly conatact Mr. Akshay Agarwal , CEO , Lead India Technologies

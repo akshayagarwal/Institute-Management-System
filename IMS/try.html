@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+<link rel="stylesheet" href="../jquery.treeview.css" />
+<link rel="stylesheet" href="../red-treeview.css" />
+<link rel="stylesheet" href="screen.css" />
+
+<script src="../lib/jquery.js" type="text/javascript"></script>
+<script src="../lib/jquery.cookie.js" type="text/javascript"></script>
+<script src="../jquery.treeview.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		$(function() {
+			$("#tree").treeview({
+				collapsed: true,
+				animated: "fast",
+				control:"#sidetreecontrol",
+				persist: "cookie"
+			});
+		})
+		
+	</script>
+<title>Home | Lead India Technologies</title>
+</head>
+
+
+<body>
+
+<h1 id="banner">Welcome to Sunny Computers, Yaval</h1>
+
+<div id="main">Main Menu
+
+<div id="sidetree">
+<div class="treeheader">&nbsp;</div>
+<div id="sidetreecontrol"><a href="?#">Collapse All</a> | <a href="?#">Expand All</a></div>
+
+<ul id="tree">
+	<li><a href="?/index.html"><strong>Home</strong></a></li>
+	<li><a href="?/students.html"><strong>Students</strong></a>
+		<ul>
+			<li><a href="?/add_student.php">Add New Student</a></li>
+			<li><a href="?/view_student_tree.php">View Students Tree</a></li>
+			<li><a href="?/modify_student.php">Modify Student details</a></li>
+		</ul>
+	</li>
+	<li><a href="?/courses.html"><strong>Courses</strong></a>
+		<ul>
+			<li><a href="add_course.php">Add New Course</a></li>
+			<li><a href="?/view_course.php">View Existing Courses</a></li>
+			<li><a href="?/modify_course.php">Modify Course Details</a></li>
+			<li><a href="?/course_report.php">View Course Report</a></li>
+		</ul>
+	</li>
+	<li><a href="?/batches.html"><strong>Batches</strong></a>
+		<ul>
+			<li><a href="?/add_batch.php">Add New Batch</a></li>
+			<li><a href="?/view_batch.php">View Existing Batches</a></li>
+			<li><a href="?/modify_batch.php">Modify Batches</a></li>
+			<li><a href="?/batch_report.php">View Batch Report</a></li>
+		</ul>
+	</li>
+	<li><a href="?/fees.html"><strong>Fees</strong></a>
+		<ul>
+			<li><a href="pay_fees.php">Pay Fees</a></li>
+			<li><a href="view_paid_fees.php">View Paid Fees</a></li>
+			<li><a href="view_pending_fees.php">View Pending Fees</a></li>
+		</ul>
+	</li>
+	<li><a href="?/payments.html"><strong>Payments</strong></a>
+		<ul>
+			<li><a href="?/make_payment.php">Make New Payment</a></li>
+			<li><a href="?/view_paid_payments.php">View Paid Payments</a></li>
+		</ul>
+	</li>
+	<li><a href="?/materials.html"><strong>Materials</strong></a>
+		<ul>
+			<li><a href="?/issue_material.php">Issue Material</a></li>
+			<li><a href="?/view_issued_material.php">View Issued Materials</a></li>
+			<li><a href="?/manage_material.html">Manage Materials</a>
+		            <ul>
+				<li><a href="?/add_new_material.php">Add New Material</a></li>
+				<li><a href="?/view_avail_material.php">View Avaialable Materials</a></li>
+				<li><a href="?/modify_material.php">Modify Existing MAterial</a></li>
+			    </ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="?/enquiries.html"><strong>Enquiries</strong></a>
+		<ul>
+			<li><a href="?/make_new_enquiry.php">Make New Enquiry</a></li>
+			<li><a href="?/view_previous_enquiry.php">View Previous Enquiries</a></li>
+			<li><a href="?/manage_enquiry_source.html">Manage Enquiry Sources</a>
+				<ul>
+					<li><a href="?/add_new_enquiry_source.php">Add New Enquiry Source</a></li>
+					<li><a href="?/view_enquiry_source.php">View All Enquiry Sources</a></li>
+					<li><a href="?/modify_enquiry_source.php">Modify Enquiry Sources</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="?/users.html"><strong>Users</strong></a>
+		<ul>
+			<li><a href="?/add_new_user.php">Add New User</a></li>
+			<li><a href="?/view_existing_user.php">View Existing Users</a></li>
+			<li><a href="?/modify_user.php">Modify Existing Users</a></li>
+		</ul>
+	</li>
+	<li><a href="?/sms.html"><strong>SMS</strong></a>
+		<ul>
+			<li><a href="?/issue_sms_notice.php">Issue SMS Notice</a></li>
+			<li><a href="?/festival_sms.php">Festival SMS</a></li>
+			<li><a href="?/other_sms.php">Other SMS</a></li>
+		</ul>
+	</li>
+	<li><a href="?/backup.html"><strong>Backup/Restore</strong></a>
+		<ul>
+			<li><a href="?/backup_data.php">Backup Data</a></li>
+			<li><a href="?/restore_data.php">Restore Data</a></li>
+			<li><a href="?/view_previous_backup.php">View Backup Records</a></li>
+		</ul>
+	</li>
+	<li><a href="?/reports.html"><strong>Reports</strong></a>
+		<ul>
+			<li><a href="?/enquiry_reports.html">Enquiry Reports</a>
+			    <ul>
+				<li><a href="?/enquiry_address_report.php">Address Reports</a></li>
+				<li><a href="?/enquiry_remarks_report.php">Remarks Reports</a></li>
+				<li><a href="?/enquiry_analysis_report.php">Enquiry Analysis Reports</a>
+					<ul>
+						<li><a href="?/enquiry_course_report.php">Enquiry Course Report</a></li>
+						<li><a href="?/enquiry_source_report.php">Enquiry Source Report</a></li>
+					</ul>
+				</li>
+			    </ul>
+			</li>
+		</ul>
+		<ul>
+	                <li><a href="?/admission_reports.html">Admission Reports</a>
+			     <ul>
+				<li><a href="?/admission_address_report.php">Address Report</a></li>
+				<li><a href="?/admission_birthday_report.php">Birthday Report</a></li>
+				<li><a href="?/admission_analysis_reports.php">Admission Analysis Reports</a></li>
+			     </ul>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="?/admission_vs_enquiries.php">Admission Vs Enquiries</a></li>
+		</ul>
+		<ul>
+			<li><a href="course_report.php">Course Report</a></li>
+		</ul>
+		<ul>
+			<li><a href="batch_report.php">Batch Report</a></li>
+		</ul>
+			
+	</li>	    	
+</ul>
+			
+</div>
+</div>
+
+</body>
+</html>

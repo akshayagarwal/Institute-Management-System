@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="Computer.ico"> 
+<link rel="stylesheet" href="../jquery.treeview.css" />
+<link rel="stylesheet" href="../red-treeview.css" />
+<link rel="stylesheet" href="screen.css" />
+
+<script src="../lib/jquery.js" type="text/javascript"></script>
+<script src="../lib/jquery.cookie.js" type="text/javascript"></script>
+<script src="../jquery.treeview.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		$(function() {
+			$("#tree").treeview({
+				collapsed: true,
+				animated: "fast",
+				control:"#sidetreecontrol",
+				persist: "cookie"
+			});
+		})
+		
+	</script>
+<title>Home | Lead India Technologies</title>
+</head>
+
+
+<body>
+<div id="main">Main Menu
+
+<div id="sidetree">
+<div class="treeheader">&nbsp;</div>
+<div id="sidetreecontrol"><a href="?#">Collapse All</a> | <a href="?#">Expand All</a></div>
+
+<ul id="tree">
+	<li><a href="yaval2.html" target="right"><strong>Home</strong></a></li>
+	<li><a href="?/students.html"><strong>Students</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/add_student3.php" target="right">Add New Student</a></li>
+			<li><a href="view_students.php" target="right">Search Student</a></li>
+			<li><a href="validate/forms/form/view_modify_student.php" target="right">View/Modify Student Details</a></li>
+			<ul><a href="omsairam.php" target="right">View Students Tree</a>
+		            <li><a href="validate/forms/form/view_tree.php" target="right">View Specific Student Tree</a></li>
+			    <li><a href="omsairam.php" target="right">View Entire Student Tree</a></li>
+		        </ul>
+		</ul>
+	</li>
+	<li><a href="?/courses.html"><strong>Courses</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/add_course.php" target="right">Add New Course</a></li>
+			<li><a href="view_course.php" target="right">View Existing Courses</a></li>
+			<li><a href="MyFCPHPClassCharts/course_reports.php" target="right">View Course Report</a></li>
+			<li><a href="course_complete.php" target="right">Course Completion</a></li>
+		</ul>
+	</li>
+	<li><a href="?/batches.html"><strong>Batches</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/add_batch.php" target="right">Add New Batch</a></li>
+			<li><a href="view_batch.php" target="right">View Existing Batches</a></li>
+			<li><a href="MyFCPHPClassCharts/batch_report.php" target="right">View Batch Report</a></li>
+		</ul>
+	</li>
+	<li><a href="?/fees.html"><strong>Fees</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/pay_fees.php" target="right">Pay Fees</a></li>
+			<li><a href="validate/forms/form/view_paid_fees_o.php" target="right">View Paid Fees</a></li>
+			<li><a href="view_pending_fees.php" target="right">View Pending Fees</a></li>
+		</ul>
+	</li>
+	<li><a href="?/payments.html"><strong>Payments</strong></a>
+		<ul>
+			<li><a href="view_make_payments.php" target="right">View/Pay Pending Payment</a></li>
+			<li><a href="validate/forms/form/view_paid_payments_o.php" target="right">View Paid Payments</a></li>
+		</ul>
+	</li>
+	<li><a href="?/materials.html"><strong>Materials</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/issue_material.php" target="right">Issue Material</a></li>
+			<li><a href="view_issued_material.php" target="right">View Issued Materials</a></li>
+			<li><a href="?/manage_material.html">Manage Materials</a>
+		            <ul>
+				<li><a href="validate/forms/form/add_new_material.php" target="right">Add New Material</a></li>
+				<li><a href="view_material_status.php" target="right">View Avaialable Materials</a></li>
+				<li><a href="validate/forms/form/modify_available_material.php" target="right">Modify Existing MAterial</a></li>
+			    </ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="?/enquiries.html"><strong>Enquiries</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/make_new_enquiry.php" target="right">Make New Enquiry</a></li>
+			<li><a href="validate/forms/form/view_eq.php" target="right">Search Enquiries</a></li>
+			<li><a href="validate/forms/form/view_modify_enquiry.php" target="right">View/Modify Enquiry Details</a></li>
+			<li><a href="?/manage_enquiry_source.html">Manage Enquiry Sources</a>
+				<ul>
+					<li><a href="validate/forms/form/add_new_source.php" target="right">Add New Enquiry Source</a></li>
+					<li><a href="MyFCPHPClassCharts/enquiry_source_report.php" target="right">Enquiry Source Report</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
+	<li><a href="?/print.html"><strong>Print</strong></a>
+		<ul>
+			<li><a href="validate/forms/form/request_print_welcome.php" target="right">Print Welcome Kit</a></li>
+			<li><a href="validate/forms/form/request_print_enquiry.php" target="right">Print Enquiry Kit</a></li>
+			<li><a href="validate/forms/form/request_print_personal_details.php" target="right">Print Student Details</a></li>
+			<li><a href="validate/forms/form/request_print_paid_fees.php" target="right">Print Paid Fees Details</a></li>
+		</ul>
+	</li>
+	
+	<li><a href="http://www.smscgateway.com" target="_blank"><strong>SMS</strong></a></li>
+	
+	
+	<li><a href="?/reports.html"><strong>Reports</strong></a>
+		<ul>
+			<li><a href="?/enquiry_reports.html">Enquiry Reports</a>
+			    <ul>
+				<li><a href="validate/forms/form/select_enquiry_address.php" target="right">Address Reports</a></li>
+				<li><a href="?/enquiry_analysis_report.php">Enquiry Analysis Reports</a>
+					<ul>
+						<li><a href="MyFCPHPClassCharts/enquiry_source_report.php" target="right">Enquiry Source Report</a></li>
+					</ul>
+				</li>
+			    </ul>
+			</li>
+		</ul>
+		<ul>
+	                <li><a href="?/admission_reports.html">Admission Reports</a>
+			     <ul>
+				<li><a href="validate/forms/form/select_admission_address.php" target="right">Address Report</a></li>
+			     </ul>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="MyFCPHPClassCharts/course_reports.php" target="right">Admission Vs Enquiries</a></li>
+		</ul>
+		<ul>
+			<li><a href="MyFCPHPClassCharts/batch_report.php" target="right">Batch Report</a></li>
+		</ul>
+		
+		<!--
+		<li><a href="?/backup.html"><strong>Backup/Restore</strong></a>
+		<ul>
+			<li><a href="http://127.0.0.1/mysql/server_export.php?lang=en-utf-8&server=1&collation_connection=utf8_general_ci" target="right">Backup Data</a></li>
+			<li><a href="http://127.0.0.1/mysql/querywindow.php" target="right">Restore Data</a></li>
+		</ul>
+	</li>
+			-->
+			<li><a href="backup.php" target="right"><b><strong>Backup</strong></b></a></li>
+			<li><a href="about.html" target="right"><strong>About</strong></a></li>
+	
+</ul>
+			
+</div>
+</div>
+
+</body>
+</html>

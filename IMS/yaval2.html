@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+<script type="text/javascript">
+<!--
+var InternetExplorer = navigator.appName.indexOf("Microsoft") != -1;
+function powerbullet_DoFSCommand(command, args) { 
+	var map = InternetExplorer ? powerbullet : document.powerbullet; 
+	if (command=="home" ) 
+		map.Rewind(); 
+	else if ( command=="zoom" ) 
+		map.Zoom(parseInt(args)); 
+   else if (command == "message") 
+		alert(args);
+   else if (command == "pan") 
+		map.Pan(parseInt(args)); 
+   else if (command == "parse") 
+		eval(args); 
+}
+//--></script>
+<SCRIPT LANGUAGE="VBScript">
+<!-- 
+Sub powerbullet_FSCommand(ByVal command, ByVal args)
+  call powerbullet_DoFSCommand(command, args)
+end sub
+-->
+</SCRIPT>
+<script type="text/javascript">
+<!--
+function Nothing(){
+}
+//--> </script>
+
+<style type="text/css">
+ body {text-align:center;}
+ div.center {text-align:center;margin-right:auto;margin-left:auto;}
+</style>
+</HEAD>
+<BODY onLoad="Nothing()" bgcolor=#FFFFFF leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">
+<div class="center">
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ID="powerbullet"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#4,0,0,0"
+  WIDTH=1280px HEIGHT=738px>
+  <PARAM name=movie VALUE="yaval2.swf">
+  <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=best>
+  <PARAM NAME=scale VALUE=exactfit> <PARAM NAME=wmode VALUE=opaque>
+  <EMBED NAME="powerbullet" WIDTH=1280px HEIGHT=738px src="yaval2.swf"
+  menu=false quality=best scale=exactfit wmode=opaque
+  TYPE="application/x-shockwave-flash"
+  PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</object>
+</div>
+<center> </center>
+</BODY>
+</HTML>
